@@ -1,13 +1,11 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         task1();
         task2();
-        task3();/*
+        task3();
         task4();
-        task5();
-        task6();
-        task7();
-        task8();*/
     }
 
     public static void task1() {
@@ -77,5 +75,16 @@ public class Main {
             } else System.out.println();
         }
         System.out.println();
+    }
+
+    public static void task4() {
+        System.out.println("Task 4");
+        int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 != 0) {
+                arr[i] = arr[i] + 1; //делаем чётное из нечетного числа
+            }
+        }
+        System.out.print(Arrays.toString(arr));
     }
 }
